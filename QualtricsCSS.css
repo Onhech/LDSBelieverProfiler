@@ -1,0 +1,72 @@
+/* Make the layout responsive */
+@media screen and (min-width: 800px) {
+    .Skin .SkinOutter,
+    .Skin .SkinInner {
+      width: 1200px !important;
+      max-width: 100% !important;
+      margin: 0 auto; /* Center the entire survey container */
+    }
+  
+    .Skin .QuestionOuter {
+      max-width: 100% !important;
+      width: 100% !important;
+      display: flex; /* Enable flexbox for centering content within the question */
+      justify-content: center; /* Center the Carousel horizontally */
+    }
+  
+    .Skin .ChoiceStructure,
+    .Skin .Matrix,
+    .Skin .MatrixTable,
+    .Skin .QuestionBody table {
+      width: 100% !important;
+      max-width: 100% !important;
+      table-layout: auto !important;
+    }
+  
+    .Skin .Matrix th,
+    .Skin .Matrix td {
+      white-space: normal !important;
+      padding: 8px 12px;
+    }
+  }
+  
+  .CarouselCardText {
+    font-size: 36px !important;
+  }
+  
+## Pw 2
+/* --- CSS for Content Cards --- */
+.content-card {
+    background-color: #f8f9fa; /* Light grey - slightly off-white */
+    border-radius: 8px;      /* Rounded corners */
+    padding: 20px 25px;      /* Inner spacing (top/bottom, left/right) */
+    margin-bottom: 30px;     /* Space below the card */
+    border: 1px solid #dee2e6; /* Light border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08); /* Subtle shadow for depth */
+  }
+  
+  /* Optional: Adjust headings inside cards */
+  .content-card h3 {
+      margin-top: 5px; /* Adjust top margin for headings inside cards */
+      border-top: none; /* Remove top border if previously used */
+      padding-top: 0;
+      /* You might want specific styles for H3 inside cards */
+  }
+  
+  /* Keep main title styling separate */
+  .main-title {
+    text-align: center;
+    color: #2c3e50;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+  }
+  
+  /* Ensure overall container has some padding too if needed */
+  .profile-container {
+    font-family: Arial, sans-serif;
+    padding: 10px 5px; /* Reduced overall padding */
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.6;
+  }
