@@ -1,0 +1,123 @@
+<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #2c3e50; background-color: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);" class="content-card">
+<h2 style="text-align: center; color: #2c3e50; margin-bottom: 20px;"><span style="color:#000066;">Your LDS Belief Scores</span></h2>
+
+<div style="margin-bottom: 2rem; position: relative;">
+<div style="font-weight: bold; margin-bottom: 0.5rem;">Orthodoxy Gauge</div>
+
+<div style="position: absolute; left: ${e://Field/orthodoxyPercent}%; /* e.g., Unorthodox/Traditionalist */ top: 15px; transform: translateX(-50%); text-align: center; z-index: 1;">
+<div style="font-size: 11px; font-weight: bold; color: #333;">You</div>
+
+<div style="width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 11px solid black; margin: -2px auto 0 auto;">&nbsp;</div>
+</div>
+
+<div style="display: flex; 
+      border-radius: 10px; 
+      height: 35px; 
+      font-size: 18px; 
+      font-weight: bold; 
+      text-align: center;
+      background: linear-gradient(to right, 
+          firebrick 0%,    /* Unorthodox */
+          darkorange 25%,  /* */
+          lightgray 50%,   /* Middle */
+          steelblue 75%,   /* */
+          darkblue 100%    /* Orthodox */
+      ); 
+      border: 1px solid #b0b0b0; 
+      margin-top: 20px; 
+      position: relative;">
+<div style="flex: 1; display: flex; align-items: center; justify-content: center; color: white; text-shadow: 1px 1px 1px black;">Unorthodox</div>
+
+<div style="flex: 1; display: flex; align-items: center; justify-content: center; color: black; text-shadow: 1px 1px 1px #ccc;">&nbsp;</div>
+
+<div style="flex: 1; display: flex; align-items: center; justify-content: center; color: black; text-shadow: 1px 1px 1px #ccc;">&nbsp;</div>
+
+<div style="flex: 1; display: flex; align-items: center; justify-content: center; color: white; text-shadow: 1px 1px 1px black;">&nbsp;</div>
+
+<div style="flex: 1; display: flex; align-items: center; justify-content: center; color: white; text-shadow: 1px 1px 1px black;">Orthodox</div>
+</div>
+</div>
+
+<hr>
+<p style="margin-bottom: 20px;"><strong>Six Dimensions of Belief:</strong><br>
+Our research found that LDS beliefs vary across six dimensions, each of which are distinct but interconnected. Together, they represent a framework to understand how different people within the church believe in different ways and why.</p>
+
+<table style="width: 100%; border-collapse: separate; border-spacing: 15px; font-size: 0.9em;">
+	<tbody>
+		<tr>
+			<td style="width: 48%; background-color: #f9f9fb; border: 1px solid #ddd; border-radius: 4px; padding: 15px; vertical-align: top;">
+			<div style="text-align: center;"><strong>Ecclesiastical Authority</strong></div>
+			The degree to which individuals defer to, trust in, and prioritize church leadership, institutional structures, and prophetic authority.</td>
+			<td style="width: 48%; background-color: #f9f9fb; border: 1px solid #ddd; border-radius: 4px; padding: 15px; vertical-align: top;">
+			<div style="text-align: center;"><strong>Social Progressivism</strong></div>
+			The extent to which individuals support adapting Church teachings, policies, and culture to align with progressive social values.</td>
+		</tr>
+		<tr>
+			<td style="background-color: #f9f9fb; border: 1px solid #ddd; border-radius: 4px; padding: 15px; vertical-align: top;">
+			<div style="text-align: center;"><strong>Doctrinal Heterodoxy</strong></div>
+			The extent to which individuals believe in unorthodox doctrines, having an openness to evolving, flexible, contextual, and less rigid conceptions of LDS doctrine and teachings.</td>
+			<td style="background-color: #f9f9fb; border: 1px solid #ddd; border-radius: 4px; padding: 15px; vertical-align: top;">
+			<div style="text-align: center;"><strong>Pacifism</strong></div>
+			The strength of an individual's aversion to violence and their opposition to the justification of force, even dire need.</td>
+		</tr>
+		<tr>
+			<td style="background-color: #f9f9fb; border: 1px solid #ddd; border-radius: 4px; padding: 15px; vertical-align: top;">
+			<div style="text-align: center;"><strong>Conventional Orthopraxy</strong></div>
+			The extent to which individuals rigidly adhere to conventional practices and standards, resisting changes or challenges to established norms.</td>
+			<td style="background-color: #f9f9fb; border: 1px solid #ddd; border-radius: 4px; padding: 15px; vertical-align: top;">
+			<div style="text-align: center;"><strong>Self-Directed Religiosity</strong></div>
+			The extent to which an individual's religious practices, spirituality, and belief systems are personally determined, rather than derived from institutional interpretation or convention.</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<table style="width: 100%; border-collapse: collapse; font-size: 0.95em; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.06);">
+	<thead>
+		<tr style="background-color: #ecf0f1;">
+			<th style="padding: 10px; border: 1px solid #ccc;">LDS Belief Dimension</th>
+			<th style="padding: 10px; border: 1px solid #ccc;">Your Score</th>
+			<th style="padding: 10px; border: 1px solid #ccc;">vs. Overall Average Score</th>
+			<th style="padding: 10px; border: 1px solid #ccc;">vs. Those in Your Profile</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: left; padding: 10px; border: 1px solid #ccc;">Ecclesiastical Authority</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">$e{ round( gr://SC_9NVMWYKolNjzAYS/WeightedMean + 0, 1)}</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">${e://Field/EA_Dif_sign}${e://Field/EA_Dif}%</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">${e://Field/EA_profile_Dif_sign}${e://Field/EA_profile_score}</td>
+		</tr>
+		<tr>
+			<td style="text-align: left; padding: 10px; border: 1px solid #ccc;">Social Progressivism</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">$e{ round( gr://SC_cUqgwOWLgMw3Fae/WeightedMean + 0, 1)}</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">${e://Field/SP_Dif_sign}${e://Field/SP_Dif}%</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">${e://Field/SP_profile_Dif_sign}${e://Field/SP_profile_score}</td>
+		</tr>
+		<tr>
+			<td style="text-align: left; padding: 10px; border: 1px solid #ccc;">Conventional Orthopraxy</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">$e{ round( gr://SC_4HsxcabrA0wTFFI/WeightedMean + 0, 1)}</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">${e://Field/CO_Dif_sign}${e://Field/CO_Dif}%</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">${e://Field/CO_profile_Dif_sign}${e://Field/CO_profile_score}</td>
+		</tr>
+		<tr>
+			<td style="text-align: left; padding: 10px; border: 1px solid #ccc;">Pacifism</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">$e{ round( gr://SC_6DqyQjKIM4FguuW/WeightedMean + 0 , 1)}</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">${e://Field/P_Dif_sign}${e://Field/P_Dif}%</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">${e://Field/P_profile_Dif_sign}${e://Field/P_profile_score}</td>
+		</tr>
+		<tr>
+			<td style="text-align: left; padding: 10px; border: 1px solid #ccc;">Doctrinal Heterodoxy</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">$e{ round( gr://SC_6tBOp609qkDYwRw/WeightedMean + 0, 1)}</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">${e://Field/DH_Dif_sign}${e://Field/DH_Dif}%</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">${e://Field/DH_profile_Dif_sign}${e://Field/DH_profile_score}</td>
+		</tr>
+		<tr>
+			<td style="text-align: left; padding: 10px; border: 1px solid #ccc;">Self-Directed Religiosity</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">$e{ round( gr://SC_8evN5GtgGZv1oyy/WeightedMean + 0, 1)}</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">${e://Field/SDR_Dif_sign}${e://Field/SDR_Dif}%</td>
+			<td style="padding: 10px; border: 1px solid #ccc;">${e://Field/SDR_profile_Dif_sign}${e://Field/SDR_profile_score}</td>
+		</tr>
+	</tbody>
+</table>
+	</div>
