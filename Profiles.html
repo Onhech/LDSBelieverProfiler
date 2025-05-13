@@ -1,429 +1,368 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Data Placeholders - Optimized</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        .font-inter {
-            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .placeholder-card { /* This is for the insights card */
-            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Match body font */
-        }
-        .blur-this-value {
-            filter: blur(3px);
-            opacity: 0.75;
-            user-select: none;
-            cursor: default;
-            display: inline-block;
-            padding: 0 2px;
-        }
-        .fa-cogs.animate-spin-slow {
-            animation: spin 3s linear infinite; 
-        }
-        /* Accordion styles */
-        details > summary { list-style: none; }
-        details > summary::-webkit-details-marker { display: none; } /* Hide default marker for WebKit */
-        details[open] > summary .accordion-icon { transform: rotate(180deg); }
-        .accordion-icon { transition: transform 0.2s ease-in-out; }
-
-        details .details-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease-in-out; /* Smooth transition for accordion */
-        }
-        details[open] .details-content {
-            max-height: 2500px; /* Adjust if content can be significantly taller */
-        }
-    </style>
-</head>
-<body class="bg-slate-100 min-h-screen py-8 px-4 font-inter text-slate-700">
-
-    <div class="content-card bg-white p-6 md:p-8 rounded-xl shadow-xl max-w-5xl mx-auto">
-        <h2 class="text-center text-slate-800 mb-8 text-2xl md:text-3xl font-semibold">
-            Your Profile: <span class="text-3xl md:text-4xl font-bold">{{PROFILENAME}}</span>
-        </h2>
+<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #2c3e50; background-color: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);" class="content-card">
+    <h2 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">Your Profile: <span style="font-size:26px;"><b>{{PROFILENAME}}</b></span></h2>
+    
+    <div style="margin-top: 25px; margin-bottom: 30px; text-align: center;">
+    <table style="width: 100%; border-collapse: separate; border-spacing: 8px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <tbody>
+            <tr>
+                <td id="profile2" style="width: 20%; 
+                               background-color: #377EB8;
+                               color: white; 
+                               padding: 18px 10px; 
+                               text-align: center; 
+                               border-radius: 8px; 
+                               font-weight: bold; 
+                               font-size: 0.9em;">Traditionalist</td>
+                <td id="profile4" style="width: 20%; 
+                               background-color: #984EA4;
+                               color: white; 
+                               padding: 12px 8px; 
+                               text-align: center; 
+                               border-radius: 6px; 
+                               font-weight: bold; 
+                               font-size: 0.9em;">Conventional</td>
+                <td id="profile1" style="width: 20%; 
+                               background-color: #E3221C; 
+                               color: white; 
+                               padding: 12px 8px; 
+                               text-align: center; 
+                               border-radius: 6px; 
+                               font-weight: bold; 
+                               font-size: 0.9em;">Moderate</td>
+                <td id="profile5" style="width: 20%; 
+                               background-color: #FE7F00;
+                               color: white;
+                               padding: 12px 8px; 
+                               text-align: center; 
+                               border-radius: 6px; 
+                               font-weight: bold;">Liberal</td>
+                <td id="profile3" style="width: 20%; 
+                               background-color: #4CAF4A; 
+                               color: white; 
+                               padding: 12px 8px; 
+                               text-align: center; 
+                               border-radius: 6px; 
+                               font-weight: bold; 
+                               font-size: 0.9em;">Progressive</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <details {{P2_BOX}} style="margin: 30px 0; background-color: #f4f6f8; padding: 15px 20px; border-radius: 6px; border: 1px solid #d0d7de;"><summary style="font-weight: bold; color: #2c3e50; cursor: pointer; font-size: 1em; outline: none;"> The "Traditionalist" Believer </summary>
+    
+    <div style="margin-top: 15px; color: #333; line-height: 1.5;">
+    <p style="background-color: #fdfdfd; padding: 15px 20px; border-left: 5px solid #3498db; border-radius: 4px; margin-bottom: 30px;"><em>Traditionalist are the second smallest group, accounting for 17% of all believers. These individuals are strongly aligned with institutional norms, scoring highest on Ecclesiastical Authority and Conventional Orthopraxy. They display clear resistance to progressive trends and individual interpretation, with moderately low scores on Social Progressiveness, Doctrinal Heterodoxy, and Self-Directed Religiosity. Their very low score on Pacifism signals the strongest endorsement that violence at times can be justified. This profile reflects deeply conservative and institutionally loyal members.</em></p>
+    
+    <div style="display: flex; justify-content: space-between; gap: 20px; margin-bottom: 30px; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 300px;">
+    <div style="text-align: center; margin-bottom: 15px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 15px;"><img style="max-width: 100%; height: auto; border-radius: 8px;" src="https://drive.google.com/thumbnail?id=1dKn11ECe04gv5znQh8Tpt6TIyZAClBPj&amp;sz=w500" alt="Radar Chart Representing Your Profile">
+    <p style="font-size: small; color: #6c757d; margin-top: 8px; font-style: italic;">This chart visualizes the this profile's relative belief strength across six dimensions of LDS belief. Scores are centered at zero, with positive values indicating a stronger belief than the overall average and negative values indicating a weaker belief.</p>
+    </div>
+    
+    <div style="overflow-x: auto;">
+    <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd; border-radius: 6px; overflow: hidden;">
+        <thead style="background-color: #e9ecef;">
+            <tr>
+                <th style="padding: 12px; text-align: left;">Belief Dimension</th>
+                <th style="padding: 12px; text-align: center;">Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border-bottom: 1px solid #eee;">Ecclesiastical Authority</td>
+                <td style="padding: 12px; text-align: center;"><strong>1.4</strong></td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border-bottom: 1px solid #eee;">Conventional Orthopraxy</td>
+                <td style="padding: 12px; text-align: center;"><strong>1.4</strong></td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border-bottom: 1px solid #eee;">Social Progressiveness</td>
+                <td style="padding: 12px; text-align: center;"><strong>-0.8</strong></td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border-bottom: 1px solid #eee;">Doctrinal Heterodoxy</td>
+                <td style="padding: 12px; text-align: center;"><strong>-1.3</strong></td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border-bottom: 1px solid #eee;">Self-Directed Religiosity</td>
+                <td style="padding: 12px; text-align: center;"><strong>-1.0</strong></td>
+            </tr>
+            <tr>
+                <td style="padding: 12px;">Pacifism</td>
+                <td style="padding: 12px; text-align: center;"><strong>-1.1</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    </div>
+    
+    <div style="flex: 1; min-width: 280px; background-color: #f9f9fb; border: 1px solid #ddd; border-radius: 8px; padding: 15px; font-size: 0.95em;">
+    <h3 style="margin-top: 0px; color: #34495e; text-align: center;"><strong>About People in this Profile</strong></h3>
+    
+    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0; line-height: 1.6;">
+        <li><strong>General Outlook</strong>
+    
+        <ul>
+            <li><strong>Political Leanings: </strong>Conservative (78% right-of center)</li>
+            <li><strong>Satisfied with Life:</strong> 81%</li>
+            <li><strong>Belief in God:</strong> 92%</li>
+            <li><strong>Religiosity</strong>: 97%</li>
+        </ul>
+        </li>
+        <li><strong>Demographics</strong>
+        <ul>
+            <li><strong>Gender Split:</strong> Mostly male (53%)</li>
+            <li><strong>Generation:</strong> Tends to be older (Boomer, GenX)</li>
+            <li><strong>Location:</strong> More strongly represented in US and Utah</li>
+            <li><strong>Marriage Rate:</strong> 64%</li>
+            <li><strong>Family Life:</strong> 32% have children, with an average of 2.1</li>
+        </ul>
+        </li>
+        <li><strong>LDS Church</strong>
+        <ul>
+            <li><strong>Activity Rate:</strong> 89%</li>
+            <li><strong>Percent Converts:</strong> 22%</li>
+            <li><strong>Percent with Callings:</strong> 63%</li>
+            <li><strong>Most Common Callings:</strong> Often gospel teachers and leadership</li>
+            <li><strong>Most Desired Callings:</strong> Teacher and Youth</li>
+            <li><strong>Favourite Apostles:</strong> Dallin H. Oaks (18%) or David A. Bednar (8.7%)
+            <ul>
+            </ul>
+            </li>
+        </ul>
+        </li>
+        <li><strong>LDS Content Sources</strong>
+        <ul>
+            <li><strong>Podcasts</strong>
+            <ul>
+                <li>Scripture Center (17%)</li>
+                <li>Follow Him (6%)</li>
+                <li>Church History Matters (3%)</li>
+            </ul>
+            </li>
+            <li><strong>YouTube</strong>
+            <ul>
+                <li>Ward Radio (8%)</li>
+                <li>The Stick of Joseph (5%)</li>
+                <li>Thoughtful Faith (6%)</li>
+                <li>Come Back Podcast (6%)</li>
+            </ul>
+            </li>
+            <li><strong>Organizations</strong>
+            <ul>
+                <li>FAIR LDS (9%)</li>
+                <li>Interpreter (2%)</li>
+            </ul>
+            </li>
+        </ul>
+        </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </details>
+    
+    <details {{P4_BOX}} id="detailsProfile4" style="margin: 30px 0; background-color: #f4f6f8; padding: 15px 20px; border-radius: 6px; border: 1px solid #d0d7de;""><summary style="font-weight: bold; color: #2c3e50; cursor: pointer; font-size: 1em; outline: none;"> The "Conventional" Believer </summary> <em>Conventional believers are the largest group, accounting for 31% of all respondents. These believers appear moderately conservative and institution-respecting. They score above average on Ecclesiastical Authority and Conventional Orthopraxy, valuing tradition and leadership, but less intensely than the Traditionalists. They show slightly above average rejection of Social Progressivism, Doctrinal Heterodoxy, and Self-Directed Religiosity. Their moderately low score on Pacifism indicates they tend to believe violence can at times be justified. This profile likely represents mainstream, active members adhering to conventional views.</em>
+    
+        <div style="margin-top: 15px; color: #333; line-height: 1.5;">
+        <p style="background-color: #fdfdfd; padding: 15px 20px; border-left: 5px solid #3498db; border-radius: 4px; margin-bottom: 30px;"><em>Conventional believers are the largest group, accounting for 31% of all respondents. These believers appear moderately conservative and institution-respecting. They score above average on Ecclesiastical Authority and Conventional Orthopraxy, valuing tradition and leadership, but less intensely than the Traditionalists. They show slightly above average rejection of Social Progressivism, Doctrinal Heterodoxy, and Self-Directed Religiosity. Their moderately low score on Pacifism indicates they tend to believe violence can at times be justified. This profile likely represents mainstream, active members adhering to conventional views.</em></p>
         
-        <div class="flex flex-wrap justify-center gap-3 md:gap-4 mb-10 text-xs sm:text-sm">
-            <span id="profile2" class="px-4 py-2 rounded-full text-white font-semibold shadow-md hover:opacity-90 transition-opacity" style="background-color: #377EB8;">Traditionalist</span>
-            <span id="profile4" class="px-4 py-2 rounded-full text-white font-semibold shadow-md hover:opacity-90 transition-opacity" style="background-color: #984EA4;">Conventional</span>
-            <span id="profile1" class="px-4 py-2 rounded-full text-white font-semibold shadow-md hover:opacity-90 transition-opacity" style="background-color: #E3221C;">Moderate</span>
-            <span id="profile5" class="px-4 py-2 rounded-full text-white font-semibold shadow-md hover:opacity-90 transition-opacity" style="background-color: #FE7F00;">Liberal</span>
-            <span id="profile3" class="px-4 py-2 rounded-full text-white font-semibold shadow-md hover:opacity-90 transition-opacity" style="background-color: #4CAF4A;">Progressive</span>
+        <div style="display: flex; justify-content: space-between; gap: 20px; margin-bottom: 30px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+        <div style="text-align: center; margin-bottom: 15px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 15px;"><img style="max-width: 100%; height: auto; border-radius: 8px;" src="https://drive.google.com/thumbnail?id=1bh4w3DNgCdtWKONSslGav63bjVMVcB4H&amp;sz=w500" alt="Radar Chart Representing Your Profile">
+        <p style="font-size: small; color: #6c757d; margin-top: 8px; font-style: italic;">This chart visualizes the this profile's relative belief strength across six dimensions of LDS belief. Scores are centered at zero, with positive values indicating a stronger belief than the overall average and negative values indicating a weaker belief.</p>
         </div>
         
-        <details {{P2_BOX}} class="mb-6 bg-white rounded-lg border border-slate-200 overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-            <summary class="flex justify-between items-center py-4 px-5 font-semibold text-slate-700 cursor-pointer hover:bg-slate-50 transition-colors duration-150 ease-in-out">
-                <span>The "Traditionalist" Believer</span>
-                <i class="fas fa-chevron-down accordion-icon text-slate-500"></i>
-            </summary>
-            <div class="details-content">
-                <div class="p-4 md:p-6 border-t border-slate-200 text-slate-600 leading-relaxed bg-white">
-                    <p class="bg-slate-50 p-4 border-l-4 border-blue-500 rounded-r-md mb-6 text-sm italic text-slate-700 shadow-sm">
-                        Traditionalist are the second smallest group, accounting for 17% of all believers. These individuals are strongly aligned with institutional norms, scoring highest on Ecclesiastical Authority and Conventional Orthopraxy. They display clear resistance to progressive trends and individual interpretation, with moderately low scores on Social Progressiveness, Doctrinal Heterodoxy, and Self-Directed Religiosity. Their very low score on Pacifism signals the strongest endorsement that violence at times can be justified. This profile reflects deeply conservative and institutionally loyal members.
-                    </p>
-                    
-                    <div class="flex flex-col lg:flex-row gap-6">
-                        <div class="lg:flex-1 w-full lg:min-w-[280px] space-y-6">
-                            <div class="bg-white border border-slate-200 rounded-lg p-4 shadow">
-                                <img class="max-w-full h-auto rounded-md mx-auto mb-3" src="https://drive.google.com/thumbnail?id=1dKn11ECe04gv5znQh8Tpt6TIyZAClBPj&amp;sz=w500" alt="Radar Chart Representing Traditionalist Profile">
-                                <p class="text-xs text-slate-500 italic">This chart visualizes this profile's relative belief strength across six dimensions of LDS belief. Scores are centered at zero, with positive values indicating a stronger belief than the overall average and negative values indicating a weaker belief.</p>
-                            </div>
-                            
-                            <div class="overflow-x-auto bg-white border border-slate-200 rounded-lg shadow">
-                                <table class="w-full text-sm">
-                                    <thead class="bg-slate-100 text-slate-600">
-                                        <tr>
-                                            <th class="p-3 text-left font-semibold">Belief Dimension</th>
-                                            <th class="p-3 text-center font-semibold">Score</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="text-slate-700">
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Ecclesiastical Authority</td><td class="p-3 border-t border-slate-200 text-center"><strong>1.4</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Conventional Orthopraxy</td><td class="p-3 border-t border-slate-200 text-center"><strong>1.4</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Social Progressiveness</td><td class="p-3 border-t border-slate-200 text-center"><strong>-0.8</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Doctrinal Heterodoxy</td><td class="p-3 border-t border-slate-200 text-center"><strong>-1.3</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Self-Directed Religiosity</td><td class="p-3 border-t border-slate-200 text-center"><strong>-1.0</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Pacifism</td><td class="p-3 border-t border-slate-200 text-center"><strong>-1.1</strong></td></tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                             <div class="bg-white border border-slate-200 rounded-lg p-4 shadow">
-                                <h4 class="text-md font-semibold text-slate-700 mb-3">Key Characteristics</h4>
-                                <ul class="space-y-3 text-sm text-slate-600">
-                                    <li class="flex items-start"><i class="fas fa-landmark fa-fw mr-3 mt-1 text-indigo-500"></i><div><strong class="text-slate-700">Institutional Loyalty:</strong> High value on established church structures and leadership.</div></li>
-                                    <li class="flex items-start"><i class="fas fa-book-open fa-fw mr-3 mt-1 text-teal-500"></i><div><strong class="text-slate-700">Conventional Practices:</strong> Strong adherence to traditional religious observances.</div></li>
-                                    <li class="flex items-start"><i class="fas fa-user-shield fa-fw mr-3 mt-1 text-amber-600"></i><div><strong class="text-slate-700">Resists Progressive Shifts:</strong> Cautious towards newer interpretations or changes.</div></li>
-                                    <li class="flex items-start"><i class="fas fa-balance-scale-left fa-fw mr-3 mt-1 text-rose-500"></i><div><strong class="text-slate-700">Clear on Justified Action:</strong> More inclined to see direct action as justified.</div></li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="placeholder-card bg-white border border-slate-200 rounded-xl shadow-lg w-full lg:flex-1 lg:min-w-[280px] overflow-hidden">
-                            <div class="p-5 sm:p-6 bg-slate-50 border-b border-slate-200">
-                                <h3 class="text-xl sm:text-2xl font-semibold text-slate-700 text-center flex items-center justify-center">
-                                    <span class="mr-2">👤</span>About People in this Profile
-                                </h3>
-                            </div>
-                            <div id="refining-info-header-p2" class="p-5 sm:p-6 bg-sky-50 border-b border-slate-200 text-center">
-                                <p class="text-md sm:text-lg font-medium text-sky-700 mb-2">
-                                    <i class="fas fa-cogs animate-spin-slow mr-2"></i>Your response is making these insights possible!
-                                </p>
-                                <p class="text-sm text-slate-600">
-                                    We need a few more responses to fully display this profile information.
-                                </p>
-                            </div>
-                            <div class="p-5 sm:p-6">
-                                <ul class="space-y-6">
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-chart-pie fa-fw mr-3 text-indigo-500 text-lg"></i>General Outlook</strong><ul class="list-disc pl-10 space-y-1.5 text-slate-600 text-sm sm:text-base"><li><strong>Political Leanings:</strong> <span class="blur-this-value">Conservative (78% right-of center)</span></li><li><strong>Satisfied with Life:</strong> <span class="blur-this-value">81%</span></li><li><strong>Belief in God:</strong> <span class="blur-this-value">92%</span></li><li><strong>Religiosity:</strong> <span class="blur-this-value">97%</span></li></ul></li>
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-users fa-fw mr-3 text-teal-500 text-lg"></i>Demographics</strong><ul class="list-disc pl-10 space-y-1.5 text-slate-600 text-sm sm:text-base"><li><strong>Gender Split:</strong> <span class="blur-this-value">Mostly male (53%)</span></li><li><strong>Generation:</strong> <span class="blur-this-value">Tends to be older (Boomer, GenX)</span></li><li><strong>Location:</strong> <span class="blur-this-value">Strongly represented in US and Utah</span></li><li><strong>Marriage Rate:</strong> <span class="blur-this-value">64%</span></li><li><strong>Family Life:</strong> <span class="blur-this-value">32% have children (avg. 2.1)</span></li></ul></li>
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-church fa-fw mr-3 text-amber-600 text-lg"></i>LDS Church</strong><ul class="list-disc pl-10 space-y-1.5 text-slate-600 text-sm sm:text-base"><li><strong>Activity Rate:</strong> <span class="blur-this-value">89%</span></li><li><strong>Percent Converts:</strong> <span class="blur-this-value">22%</span></li><li><strong>Percent with Callings:</strong> <span class="blur-this-value">63%</span></li><li><strong>Most Common Callings:</strong> <span class="blur-this-value">Gospel teachers (13%), Leadership (8%)</span></li><li><strong>Most Desired Callings:</strong> <span class="blur-this-value">Teacher and Youth</span></li><li><strong>Favourite Apostles:</strong> <span class="blur-this-value">Dallin H. Oaks (18%) or David A. Bednar (8.7%)</span></li></ul></li>
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-broadcast-tower fa-fw mr-3 text-rose-500 text-lg"></i>Top Sources For LDS Content</strong><ul class="list-none pl-10 space-y-3 text-slate-600 text-sm sm:text-base"><li><strong class="text-slate-700">Podcasts:</strong><ul class="list-circle pl-5 mt-1 space-y-1.5"><li><span class="blur-this-value">Scripture Center (17%)</span></li><li><span class="blur-this-value">Follow Him (6%)</span></li><li><span class="blur-this-value">Church History Matters (3%)</span></li></ul></li><li><strong class="text-slate-700">YouTube Channels:</strong><ul class="list-circle pl-5 mt-1 space-y-1.5"><li><span class="blur-this-value">Ward Radio (8%)</span></li><li><span class="blur-this-value">The Stick of Joseph (5%)</span></li><li><span class="blur-this-value">Thoughtful Faith (6%)</span></li><li><span class="blur-this-value">Come Back Podcast (6%)</span></li></ul></li><li><strong class="text-slate-700">Organizations:</strong><ul class="list-circle pl-5 mt-1 space-y-1.5"><li><span class="blur-this-value">FAIR LDS (9%)</span></li><li><span class="blur-this-value">Interpreter (2%)</span></li></ul></li></ul></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </details>
-
-        <details {{P4_BOX}} class="mb-6 bg-white rounded-lg border border-slate-200 overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-            <summary class="flex justify-between items-center py-4 px-5 font-semibold text-slate-700 cursor-pointer hover:bg-slate-50 transition-colors duration-150 ease-in-out">
-                <span>The "Conventional" Believer</span>
-                <i class="fas fa-chevron-down accordion-icon text-slate-500"></i>
-            </summary>
-            <div class="details-content">
-                <div class="p-4 md:p-6 border-t border-slate-200 text-slate-600 leading-relaxed bg-white">
-                    <p class="bg-slate-50 p-4 border-l-4 border-blue-500 rounded-r-md mb-6 text-sm italic text-slate-700 shadow-sm">
-                        Conventional believers are the largest group, accounting for 31% of all respondents. These believers appear moderately conservative and institution-respecting. They score above average on Ecclesiastical Authority and Conventional Orthopraxy, valuing tradition and leadership, but less intensely than the Traditionalists. They show slightly above average rejection of Social Progressivism, Doctrinal Heterodoxy, and Self-Directed Religiosity. Their moderately low score on Pacifism indicates they tend to believe violence can at times be justified. This profile likely represents mainstream, active members adhering to conventional views.
-                    </p>
-                    
-                    <div class="flex flex-col lg:flex-row gap-6">
-                        <div class="lg:flex-1 w-full lg:min-w-[280px] space-y-6">
-                            <div class="bg-white border border-slate-200 rounded-lg p-4 shadow">
-                                <img class="max-w-full h-auto rounded-md mx-auto mb-3" src="https://drive.google.com/thumbnail?id=1bh4w3DNgCdtWKONSslGav63bjVMVcB4H&amp;sz=w500" alt="Radar Chart Representing Conventional Profile">
-                                <p class="text-xs text-slate-500 italic">This chart visualizes this profile's relative belief strength across six dimensions of LDS belief. Scores are centered at zero, with positive values indicating a stronger belief than the overall average and negative values indicating a weaker belief.</p>
-                            </div>
-                            
-                            <div class="overflow-x-auto bg-white border border-slate-200 rounded-lg shadow">
-                                <table class="w-full text-sm">
-                                    <thead class="bg-slate-100 text-slate-600">
-                                        <tr>
-                                            <th class="p-3 text-left font-semibold">Belief Dimension</th>
-                                            <th class="p-3 text-center font-semibold">Score</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="text-slate-700">
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Ecclesiastical Authority</td><td class="p-3 border-t border-slate-200 text-center"><strong>1.4</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Conventional Orthopraxy</td><td class="p-3 border-t border-slate-200 text-center"><strong>1.4</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Social Progressiveness</td><td class="p-3 border-t border-slate-200 text-center"><strong>-0.8</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Doctrinal Heterodoxy</td><td class="p-3 border-t border-slate-200 text-center"><strong>-1.3</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Self-Directed Religiosity</td><td class="p-3 border-t border-slate-200 text-center"><strong>-1.0</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Pacifism</td><td class="p-3 border-t border-slate-200 text-center"><strong>-1.1</strong></td></tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                             <div class="bg-white border border-slate-200 rounded-lg p-4 shadow">
-                                <h4 class="text-md font-semibold text-slate-700 mb-3">Key Characteristics</h4>
-                                <ul class="space-y-3 text-sm text-slate-600">
-                                    <li class="flex items-start"><i class="fas fa-landmark fa-fw mr-3 mt-1 text-indigo-500"></i><div><strong class="text-slate-700">Institutional Loyalty:</strong> High value on established church structures and leadership.</div></li>
-                                    <li class="flex items-start"><i class="fas fa-book-open fa-fw mr-3 mt-1 text-teal-500"></i><div><strong class="text-slate-700">Conventional Practices:</strong> Strong adherence to traditional religious observances.</div></li>
-                                    <li class="flex items-start"><i class="fas fa-user-shield fa-fw mr-3 mt-1 text-amber-600"></i><div><strong class="text-slate-700">Resists Progressive Shifts:</strong> Cautious towards newer interpretations or changes.</div></li>
-                                    <li class="flex items-start"><i class="fas fa-balance-scale-left fa-fw mr-3 mt-1 text-rose-500"></i><div><strong class="text-slate-700">Clear on Justified Action:</strong> More inclined to see direct action as justified.</div></li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="placeholder-card bg-white border border-slate-200 rounded-xl shadow-lg w-full lg:flex-1 lg:min-w-[280px] overflow-hidden">
-                            <div class="p-5 sm:p-6 bg-slate-50 border-b border-slate-200">
-                                <h3 class="text-xl sm:text-2xl font-semibold text-slate-700 text-center flex items-center justify-center">
-                                    <span class="mr-2">👤</span>About People in this Profile
-                                </h3>
-                            </div>
-                            <div id="refining-info-header-p4" class="p-5 sm:p-6 bg-sky-50 border-b border-slate-200 text-center">
-                                <p class="text-md sm:text-lg font-medium text-sky-700 mb-2">
-                                    <i class="fas fa-cogs animate-spin-slow mr-2"></i>Your response is making these insights possible!
-                                </p>
-                                <p class="text-sm text-slate-600">
-                                    We need a few more responses to fully display this profile information.
-                                </p>
-                            </div>
-                            <div class="p-5 sm:p-6">
-                                <ul class="space-y-6">
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-chart-pie fa-fw mr-3 text-indigo-500 text-lg"></i>General Outlook</strong><ul class="list-disc pl-10 space-y-1.5 text-slate-600 text-sm sm:text-base"><li><strong>Political Leanings:</strong> <span class="blur-this-value">Conservative (78% right-of center)</span></li><li><strong>Satisfied with Life:</strong> <span class="blur-this-value">81%</span></li><li><strong>Belief in God:</strong> <span class="blur-this-value">92%</span></li><li><strong>Religiosity:</strong> <span class="blur-this-value">97%</span></li></ul></li>
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-users fa-fw mr-3 text-teal-500 text-lg"></i>Demographics</strong><ul class="list-disc pl-10 space-y-1.5 text-slate-600 text-sm sm:text-base"><li><strong>Gender Split:</strong> <span class="blur-this-value">Mostly male (53%)</span></li><li><strong>Generation:</strong> <span class="blur-this-value">Tends to be older (Boomer, GenX)</span></li><li><strong>Location:</strong> <span class="blur-this-value">Strongly represented in US and Utah</span></li><li><strong>Marriage Rate:</strong> <span class="blur-this-value">64%</span></li><li><strong>Family Life:</strong> <span class="blur-this-value">32% have children (avg. 2.1)</span></li></ul></li>
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-church fa-fw mr-3 text-amber-600 text-lg"></i>LDS Church</strong><ul class="list-disc pl-10 space-y-1.5 text-slate-600 text-sm sm:text-base"><li><strong>Activity Rate:</strong> <span class="blur-this-value">89%</span></li><li><strong>Percent Converts:</strong> <span class="blur-this-value">22%</span></li><li><strong>Percent with Callings:</strong> <span class="blur-this-value">63%</span></li><li><strong>Most Common Callings:</strong> <span class="blur-this-value">Gospel teachers (13%), Leadership (8%)</span></li><li><strong>Most Desired Callings:</strong> <span class="blur-this-value">Teacher and Youth</span></li><li><strong>Favourite Apostles:</strong> <span class="blur-this-value">Dallin H. Oaks (18%) or David A. Bednar (8.7%)</span></li></ul></li>
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-broadcast-tower fa-fw mr-3 text-rose-500 text-lg"></i>Top Sources For LDS Content</strong><ul class="list-none pl-10 space-y-3 text-slate-600 text-sm sm:text-base"><li><strong class="text-slate-700">Podcasts:</strong><ul class="list-circle pl-5 mt-1 space-y-1.5"><li><span class="blur-this-value">Scripture Center (17%)</span></li><li><span class="blur-this-value">Follow Him (6%)</span></li><li><span class="blur-this-value">Church History Matters (3%)</span></li></ul></li><li><strong class="text-slate-700">YouTube Channels:</strong><ul class="list-circle pl-5 mt-1 space-y-1.5"><li><span class="blur-this-value">Ward Radio (8%)</span></li><li><span class="blur-this-value">The Stick of Joseph (5%)</span></li><li><span class="blur-this-value">Thoughtful Faith (6%)</span></li><li><span class="blur-this-value">Come Back Podcast (6%)</span></li></ul></li><li><strong class="text-slate-700">Organizations:</strong><ul class="list-circle pl-5 mt-1 space-y-1.5"><li><span class="blur-this-value">FAIR LDS (9%)</span></li><li><span class="blur-this-value">Interpreter (2%)</span></li></ul></li></ul></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </details>
+        <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd; border-radius: 6px; overflow: hidden;">
+            <thead style="background-color: #e9ecef;">
+                <tr>
+                    <th style="padding: 12px; text-align: left;">Belief Dimension</th>
+                    <th style="padding: 12px; text-align: center;">Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px; border-bottom: 1px solid #eee;">Ecclesiastical Authority</td>
+                    <td style="padding: 12px; text-align: center;"><strong>1.4</strong></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border-bottom: 1px solid #eee;">Conventional Orthopraxy</td>
+                    <td style="padding: 12px; text-align: center;"><strong>1.4</strong></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border-bottom: 1px solid #eee;">Social Progressiveness</td>
+                    <td style="padding: 12px; text-align: center;"><strong>-0.8</strong></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border-bottom: 1px solid #eee;">Doctrinal Heterodoxy</td>
+                    <td style="padding: 12px; text-align: center;"><strong>-1.3</strong></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border-bottom: 1px solid #eee;">Self-Directed Religiosity</td>
+                    <td style="padding: 12px; text-align: center;"><strong>-1.0</strong></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;">Pacifism</td>
+                    <td style="padding: 12px; text-align: center;"><strong>-1.1</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        </div>
         
-        <details {{P1_BOX}} class="mb-6 bg-white rounded-lg border border-slate-200 overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-            <summary class="flex justify-between items-center py-4 px-5 font-semibold text-slate-700 cursor-pointer hover:bg-slate-50 transition-colors duration-150 ease-in-out">
-                <span>The "Moderate" Believer</span>
-                <i class="fas fa-chevron-down accordion-icon text-slate-500"></i>
-            </summary>
-            <div class="details-content">
-                <div class="p-4 md:p-6 border-t border-slate-200 text-slate-600 leading-relaxed bg-white">
-                    <p class="bg-slate-50 p-4 border-l-4 border-red-500 rounded-r-md mb-6 text-sm italic text-slate-700 shadow-sm">
-                        Moderate believers are the second largest profile, accounting for 30% of all believers. These individuals are near the overall average on nearly all belief dimensions. They show slightly below-average scores on Ecclesiastical Authority andConventional Orthopraxy, but very average scores on Social Progressivism,Doctrinal Heterodoxy, and Self-Directed Religiosity. Their moderate score onPacifism indicates a moderate tendency to reject justifications for violence compared to other classes. This profile represents members without strong ideological leanings, perhaps reflecting a very balanced, middle-way approach to their faith within this sample.
-                    </p>
-                    <div class="flex flex-col lg:flex-row gap-6">
-                        <div class="lg:flex-1 w-full lg:min-w-[280px] space-y-6">
-                            <div class="bg-white border border-slate-200 rounded-lg p-4 shadow">
-                                <img class="max-w-full h-auto rounded-md mx-auto mb-3" src="https://drive.google.com/thumbnail?id=1bh4w3DNgCdtWKONSslGav63bjVMVcB4H&amp;sz=w500" alt="Radar Chart Representing Moderate Profile"> 
-                                <p class="text-xs text-slate-500 italic">This chart visualizes this profile's relative belief strength across six dimensions of LDS belief. Scores are centered at zero, with positive values indicating a stronger belief than the overall average and negative values indicating a weaker belief.</p>
-                            </div>
-                            <div class="overflow-x-auto bg-white border border-slate-200 rounded-lg shadow">
-                                <table class="w-full text-sm">
-                                    <thead class="bg-slate-100 text-slate-600">
-                                        <tr>
-                                            <th class="p-3 text-left font-semibold">Belief Dimension</th>
-                                            <th class="p-3 text-center font-semibold">Score</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="text-slate-700">
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Ecclesiastical Authority</td><td class="p-3 border-t border-slate-200 text-center"><strong>1.4</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Conventional Orthopraxy</td><td class="p-3 border-t border-slate-200 text-center"><strong>1.4</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Social Progressiveness</td><td class="p-3 border-t border-slate-200 text-center"><strong>-0.8</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Doctrinal Heterodoxy</td><td class="p-3 border-t border-slate-200 text-center"><strong>-1.3</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Self-Directed Religiosity</td><td class="p-3 border-t border-slate-200 text-center"><strong>-1.0</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Pacifism</td><td class="p-3 border-t border-slate-200 text-center"><strong>-1.1</strong></td></tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="bg-white border border-slate-200 rounded-lg p-4 shadow">
-                                <h4 class="text-md font-semibold text-slate-700 mb-3">Key Characteristics</h4>
-                                <ul class="space-y-3 text-sm text-slate-600">
-                                     <li class="flex items-start"><i class="fas fa-landmark fa-fw mr-3 mt-1 text-indigo-500"></i><div><strong class="text-slate-700">Balanced Views:</strong> Often near average on many belief dimensions.</div></li>
-                                     <li class="flex items-start"><i class="fas fa-users fa-fw mr-3 mt-1 text-teal-500"></i><div><strong class="text-slate-700">Middle-Way Approach:</strong> May not exhibit strong ideological leanings.</div></li>
-                                     <li class="flex items-start"><i class="fas fa-comments fa-fw mr-3 mt-1 text-amber-600"></i><div><strong class="text-slate-700">Moderate Pacifism:</strong> Less likely to strongly endorse or reject justifications for violence.</div></li>
-                                     <li class="flex items-start"><i class="fas fa-arrows-alt-h fa-fw mr-3 mt-1 text-rose-500"></i><div><strong class="text-slate-700">Average Orthodoxy:</strong> Conventional practices valued but perhaps less intensely.</div></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="placeholder-card bg-white border border-slate-200 rounded-xl shadow-lg w-full lg:flex-1 lg:min-w-[280px] overflow-hidden">
-                            <div class="p-5 sm:p-6 bg-slate-50 border-b border-slate-200">
-                                <h3 class="text-xl sm:text-2xl font-semibold text-slate-700 text-center flex items-center justify-center">
-                                    <span class="mr-2">👤</span>About People in this Profile
-                                </h3>
-                            </div>
-                            <div id="refining-info-header-p1" class="p-5 sm:p-6 bg-sky-50 border-b border-slate-200 text-center">
-                                <p class="text-md sm:text-lg font-medium text-sky-700 mb-2">
-                                    <i class="fas fa-cogs animate-spin-slow mr-2"></i>Your response is making these insights possible!
-                                </p>
-                                <p class="text-sm text-slate-600">
-                                    We need a few more responses to fully display this profile information.
-                                </p>
-                            </div>
-                            <div class="p-5 sm:p-6">
-                                <ul class="space-y-6">
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-chart-pie fa-fw mr-3 text-indigo-500 text-lg"></i>General Outlook</strong><ul class="list-disc pl-10 space-y-1.5 text-slate-600 text-sm sm:text-base"><li><strong>Political Leanings:</strong> <span class="blur-this-value">Conservative (78% right-of center)</span></li><li><strong>Satisfied with Life:</strong> <span class="blur-this-value">81%</span></li><li><strong>Belief in God:</strong> <span class="blur-this-value">92%</span></li><li><strong>Religiosity:</strong> <span class="blur-this-value">97%</span></li></ul></li>
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-users fa-fw mr-3 text-teal-500 text-lg"></i>Demographics</strong><ul class="list-disc pl-10 space-y-1.5 text-slate-600 text-sm sm:text-base"><li><strong>Gender Split:</strong> <span class="blur-this-value">Mostly male (53%)</span></li><li><strong>Generation:</strong> <span class="blur-this-value">Tends to be older (Boomer, GenX)</span></li><li><strong>Location:</strong> <span class="blur-this-value">Strongly represented in US and Utah</span></li><li><strong>Marriage Rate:</strong> <span class="blur-this-value">64%</span></li><li><strong>Family Life:</strong> <span class="blur-this-value">32% have children (avg. 2.1)</span></li></ul></li>
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-church fa-fw mr-3 text-amber-600 text-lg"></i>LDS Church</strong><ul class="list-disc pl-10 space-y-1.5 text-slate-600 text-sm sm:text-base"><li><strong>Activity Rate:</strong> <span class="blur-this-value">89%</span></li><li><strong>Percent Converts:</strong> <span class="blur-this-value">22%</span></li><li><strong>Percent with Callings:</strong> <span class="blur-this-value">63%</span></li><li><strong>Most Common Callings:</strong> <span class="blur-this-value">Gospel teachers (13%), Leadership (8%)</span></li><li><strong>Most Desired Callings:</strong> <span class="blur-this-value">Teacher and Youth</span></li><li><strong>Favourite Apostles:</strong> <span class="blur-this-value">Dallin H. Oaks (18%) or David A. Bednar (8.7%)</span></li></ul></li>
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-broadcast-tower fa-fw mr-3 text-rose-500 text-lg"></i>Top Sources For LDS Content</strong><ul class="list-none pl-10 space-y-3 text-slate-600 text-sm sm:text-base"><li><strong class="text-slate-700">Podcasts:</strong><ul class="list-circle pl-5 mt-1 space-y-1.5"><li><span class="blur-this-value">Scripture Center (17%)</span></li><li><span class="blur-this-value">Follow Him (6%)</span></li><li><span class="blur-this-value">Church History Matters (3%)</span></li></ul></li><li><strong class="text-slate-700">YouTube Channels:</strong><ul class="list-circle pl-5 mt-1 space-y-1.5"><li><span class="blur-this-value">Ward Radio (8%)</span></li><li><span class="blur-this-value">The Stick of Joseph (5%)</span></li><li><span class="blur-this-value">Thoughtful Faith (6%)</span></li><li><span class="blur-this-value">Come Back Podcast (6%)</span></li></ul></li><li><strong class="text-slate-700">Organizations:</strong><ul class="list-circle pl-5 mt-1 space-y-1.5"><li><span class="blur-this-value">FAIR LDS (9%)</span></li><li><span class="blur-this-value">Interpreter (2%)</span></li></ul></li></ul></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </details>
-
-        <details {{P5_BOX}} class="mb-6 bg-white rounded-lg border border-slate-200 overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-            <summary class="flex justify-between items-center py-4 px-5 font-semibold text-slate-700 cursor-pointer hover:bg-slate-50 transition-colors duration-150 ease-in-out">
-                <span>The "Liberal" Believer</span>
-                <i class="fas fa-chevron-down accordion-icon text-slate-500"></i>
-            </summary>
-            <div class="details-content">
-                <div class="p-4 md:p-6 border-t border-slate-200 text-slate-600 leading-relaxed bg-white">
-                     <p class="bg-slate-50 p-4 border-l-4 border-orange-500 rounded-r-md mb-6 text-sm italic text-slate-700 shadow-sm">
-                        Liberal believers often emphasize personal interpretation, social justice, and inclusivity. They may question traditional structures while valuing community and core spiritual tenets. Scores typically show high Social Progressiveness and Doctrinal Heterodoxy, with lower Ecclesiastical Authority.
-                    </p>
-                    <div class="flex flex-col lg:flex-row gap-6">
-                        <div class="lg:flex-1 w-full lg:min-w-[280px] space-y-6">
-                            <div class="bg-white border border-slate-200 rounded-lg p-4 shadow">
-                                <img class="max-w-full h-auto rounded-md mx-auto mb-3" src="https://drive.google.com/thumbnail?id=1nzq8sWRg6TOCL9gag3RwraFc5e8y33Dc&amp;sz=w500" alt="Radar Chart Representing Liberal Profile">
-                                <p class="text-xs text-slate-500 italic">This chart visualizes this profile's relative belief strength across six dimensions of LDS belief. Scores are centered at zero, with positive values indicating a stronger belief than the overall average and negative values indicating a weaker belief.</p>
-                            </div>
-                            <div class="overflow-x-auto bg-white border border-slate-200 rounded-lg shadow">
-                                <table class="w-full text-sm">
-                                    <thead class="bg-slate-100 text-slate-600">
-                                        <tr>
-                                            <th class="p-3 text-left font-semibold">Belief Dimension</th>
-                                            <th class="p-3 text-center font-semibold">Score</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="text-slate-700">
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Ecclesiastical Authority</td><td class="p-3 border-t border-slate-200 text-center"><strong>-1.0</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Conventional Orthopraxy</td><td class="p-3 border-t border-slate-200 text-center"><strong>-0.5</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Social Progressiveness</td><td class="p-3 border-t border-slate-200 text-center"><strong>1.5</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Doctrinal Heterodoxy</td><td class="p-3 border-t border-slate-200 text-center"><strong>1.2</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Self-Directed Religiosity</td><td class="p-3 border-t border-slate-200 text-center"><strong>0.8</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Pacifism</td><td class="p-3 border-t border-slate-200 text-center"><strong>0.5</strong></td></tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                             <div class="bg-white border border-slate-200 rounded-lg p-4 shadow">
-                                <h4 class="text-md font-semibold text-slate-700 mb-3">Key Characteristics</h4>
-                                <ul class="space-y-3 text-sm text-slate-600">
-                                     <li class="flex items-start"><i class="fas fa-users-cog fa-fw mr-3 mt-1 text-indigo-500"></i><div><strong class="text-slate-700">Socially Progressive:</strong> Strong emphasis on inclusivity and social justice issues.</div></li>
-                                     <li class="flex items-start"><i class="fas fa-lightbulb fa-fw mr-3 mt-1 text-teal-500"></i><div><strong class="text-slate-700">Open to Interpretation:</strong> Higher doctrinal heterodoxy and self-directed religiosity.</div></li>
-                                     <li class="flex items-start"><i class="fas fa-question-circle fa-fw mr-3 mt-1 text-amber-600"></i><div><strong class="text-slate-700">Questions Tradition:</strong> May critically examine or be less bound by conventional norms.</div></li>
-                                     <li class="flex items-start"><i class="fas fa-dove fa-fw mr-3 mt-1 text-rose-500"></i><div><strong class="text-slate-700">Values Community Spirit:</strong> Focus on compassion and evolving understanding of faith.</div></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="placeholder-card bg-white border border-slate-200 rounded-xl shadow-lg w-full lg:flex-1 lg:min-w-[280px] overflow-hidden">
-                            <div class="p-5 sm:p-6 bg-slate-50 border-b border-slate-200">
-                                <h3 class="text-xl sm:text-2xl font-semibold text-slate-700 text-center flex items-center justify-center">
-                                    <span class="mr-2">👤</span>About People in this Profile
-                                </h3>
-                            </div>
-                            <div id="refining-info-header-p5" class="p-5 sm:p-6 bg-sky-50 border-b border-slate-200 text-center">
-                                <p class="text-md sm:text-lg font-medium text-sky-700 mb-2">
-                                    <i class="fas fa-cogs animate-spin-slow mr-2"></i>Your response is making these insights possible!
-                                </p>
-                                <p class="text-sm text-slate-600">
-                                    We need a few more responses to fully display this profile information.
-                                </p>
-                            </div>
-                            <div class="p-5 sm:p-6">
-                                <ul class="space-y-6">
-                                   <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-chart-pie fa-fw mr-3 text-indigo-500 text-lg"></i>General Outlook</strong><ul class="list-disc pl-10 space-y-1.5 text-slate-600 text-sm sm:text-base"><li><strong>Political Leanings:</strong> <span class="blur-this-value">Conservative (78% right-of center)</span></li><li><strong>Satisfied with Life:</strong> <span class="blur-this-value">81%</span></li><li><strong>Belief in God:</strong> <span class="blur-this-value">92%</span></li><li><strong>Religiosity:</strong> <span class="blur-this-value">97%</span></li></ul></li>
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-users fa-fw mr-3 text-teal-500 text-lg"></i>Demographics</strong><ul class="list-disc pl-10 space-y-1.5 text-slate-600 text-sm sm:text-base"><li><strong>Gender Split:</strong> <span class="blur-this-value">Mostly male (53%)</span></li><li><strong>Generation:</strong> <span class="blur-this-value">Tends to be older (Boomer, GenX)</span></li><li><strong>Location:</strong> <span class="blur-this-value">Strongly represented in US and Utah</span></li><li><strong>Marriage Rate:</strong> <span class="blur-this-value">64%</span></li><li><strong>Family Life:</strong> <span class="blur-this-value">32% have children (avg. 2.1)</span></li></ul></li>
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-church fa-fw mr-3 text-amber-600 text-lg"></i>LDS Church</strong><ul class="list-disc pl-10 space-y-1.5 text-slate-600 text-sm sm:text-base"><li><strong>Activity Rate:</strong> <span class="blur-this-value">89%</span></li><li><strong>Percent Converts:</strong> <span class="blur-this-value">22%</span></li><li><strong>Percent with Callings:</strong> <span class="blur-this-value">63%</span></li><li><strong>Most Common Callings:</strong> <span class="blur-this-value">Gospel teachers (13%), Leadership (8%)</span></li><li><strong>Most Desired Callings:</strong> <span class="blur-this-value">Teacher and Youth</span></li><li><strong>Favourite Apostles:</strong> <span class="blur-this-value">Dallin H. Oaks (18%) or David A. Bednar (8.7%)</span></li></ul></li>
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-broadcast-tower fa-fw mr-3 text-rose-500 text-lg"></i>Top Sources For LDS Content</strong><ul class="list-none pl-10 space-y-3 text-slate-600 text-sm sm:text-base"><li><strong class="text-slate-700">Podcasts:</strong><ul class="list-circle pl-5 mt-1 space-y-1.5"><li><span class="blur-this-value">Scripture Center (17%)</span></li><li><span class="blur-this-value">Follow Him (6%)</span></li><li><span class="blur-this-value">Church History Matters (3%)</span></li></ul></li><li><strong class="text-slate-700">YouTube Channels:</strong><ul class="list-circle pl-5 mt-1 space-y-1.5"><li><span class="blur-this-value">Ward Radio (8%)</span></li><li><span class="blur-this-value">The Stick of Joseph (5%)</span></li><li><span class="blur-this-value">Thoughtful Faith (6%)</span></li><li><span class="blur-this-value">Come Back Podcast (6%)</span></li></ul></li><li><strong class="text-slate-700">Organizations:</strong><ul class="list-circle pl-5 mt-1 space-y-1.5"><li><span class="blur-this-value">FAIR LDS (9%)</span></li><li><span class="blur-this-value">Interpreter (2%)</span></li></ul></li></ul></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </details>
-
-        <details {{P3_BOX}} class="mb-6 bg-white rounded-lg border border-slate-200 overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-            <summary class="flex justify-between items-center py-4 px-5 font-semibold text-slate-700 cursor-pointer hover:bg-slate-50 transition-colors duration-150 ease-in-out">
-                <span>The "Progressive" Believer</span>
-                <i class="fas fa-chevron-down accordion-icon text-slate-500"></i>
-            </summary>
-            <div class="details-content">
-                <div class="p-4 md:p-6 border-t border-slate-200 text-slate-600 leading-relaxed bg-white">
-                    <p class="bg-slate-50 p-4 border-l-4 border-green-500 rounded-r-md mb-6 text-sm italic text-slate-700 shadow-sm">
-                        Progressive believers actively seek reform and reinterpretation of doctrines and practices to align with modern ethical and social understanding. They often champion inclusivity, challenge traditional power structures, and emphasize lived experience and reason in their faith.
-                    </p>
-                    <div class="flex flex-col lg:flex-row gap-6">
-                        <div class="lg:flex-1 w-full lg:min-w-[280px] space-y-6">
-                            <div class="bg-white border border-slate-200 rounded-lg p-4 shadow">
-                                <img class="max-w-full h-auto rounded-md mx-auto mb-3" src="https://drive.google.com/thumbnail?id=1nzq8sWRg6TOCL9gag3RwraFc5e8y33Dc&amp;sz=w500" alt="Radar Chart Representing Progressive Profile">
-                                <p class="text-xs text-slate-500 italic">This chart visualizes this profile's relative belief strength across six dimensions of LDS belief. Scores are centered at zero, with positive values indicating a stronger belief than the overall average and negative values indicating a weaker belief.</p>
-                            </div>
-                            <div class="overflow-x-auto bg-white border border-slate-200 rounded-lg shadow">
-                                <table class="w-full text-sm">
-                                    <thead class="bg-slate-100 text-slate-600">
-                                        <tr>
-                                            <th class="p-3 text-left font-semibold">Belief Dimension</th>
-                                            <th class="p-3 text-center font-semibold">Score</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="text-slate-700">
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Ecclesiastical Authority</td><td class="p-3 border-t border-slate-200 text-center"><strong>-1.5</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Conventional Orthopraxy</td><td class="p-3 border-t border-slate-200 text-center"><strong>-1.0</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Social Progressiveness</td><td class="p-3 border-t border-slate-200 text-center"><strong>1.8</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Doctrinal Heterodoxy</td><td class="p-3 border-t border-slate-200 text-center"><strong>1.5</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Self-Directed Religiosity</td><td class="p-3 border-t border-slate-200 text-center"><strong>1.2</strong></td></tr>
-                                        <tr class="odd:bg-slate-50"><td class="p-3 border-t border-slate-200">Pacifism</td><td class="p-3 border-t border-slate-200 text-center"><strong>0.8</strong></td></tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="bg-white border border-slate-200 rounded-lg p-4 shadow">
-                                <h4 class="text-md font-semibold text-slate-700 mb-3">Key Characteristics</h4>
-                                <ul class="space-y-3 text-sm text-slate-600">
-                                     <li class="flex items-start"><i class="fas fa-sync-alt fa-fw mr-3 mt-1 text-indigo-500"></i><div><strong class="text-slate-700">Advocates for Change:</strong> Actively seeks reform and reinterpretation in religious contexts.</div></li>
-                                     <li class="flex items-start"><i class="fas fa-heart fa-fw mr-3 mt-1 text-teal-500"></i><div><strong class="text-slate-700">Emphasis on Inclusivity:</strong> Strong focus on social justice and welcoming all individuals.</div></li>
-                                     <li class="flex items-start"><i class="fas fa-brain fa-fw mr-3 mt-1 text-amber-600"></i><div><strong class="text-slate-700">Values Reason & Experience:</strong> Lived experience and critical reasoning are key to faith.</div></li>
-                                     <li class="flex items-start"><i class="fas fa-comments-dollar fa-fw mr-3 mt-1 text-rose-500"></i><div><strong class="text-slate-700">Challenges Norms:</strong> May question traditional power structures and interpretations.</div></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="placeholder-card bg-white border border-slate-200 rounded-xl shadow-lg w-full lg:flex-1 lg:min-w-[280px] overflow-hidden">
-                            <div class="p-5 sm:p-6 bg-slate-50 border-b border-slate-200">
-                                <h3 class="text-xl sm:text-2xl font-semibold text-slate-700 text-center flex items-center justify-center">
-                                    <span class="mr-2">👤</span>About People in this Profile
-                                </h3>
-                            </div>
-                            <div id="refining-info-header-p3" class="p-5 sm:p-6 bg-sky-50 border-b border-slate-200 text-center">
-                                <p class="text-md sm:text-lg font-medium text-sky-700 mb-2">
-                                    <i class="fas fa-cogs animate-spin-slow mr-2"></i>Your response is making these insights possible!
-                                </p>
-                                <p class="text-sm text-slate-600">
-                                    We need a few more responses to fully display this profile information.
-                                </p>
-                            </div>
-                            <div class="p-5 sm:p-6">
-                                <ul class="space-y-6">
-                                   <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-chart-pie fa-fw mr-3 text-indigo-500 text-lg"></i>General Outlook</strong><ul class="list-disc pl-10 space-y-1.5 text-slate-600 text-sm sm:text-base"><li><strong>Political Leanings:</strong> <span class="blur-this-value">Conservative (78% right-of center)</span></li><li><strong>Satisfied with Life:</strong> <span class="blur-this-value">81%</span></li><li><strong>Belief in God:</strong> <span class="blur-this-value">92%</span></li><li><strong>Religiosity:</strong> <span class="blur-this-value">97%</span></li></ul></li>
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-users fa-fw mr-3 text-teal-500 text-lg"></i>Demographics</strong><ul class="list-disc pl-10 space-y-1.5 text-slate-600 text-sm sm:text-base"><li><strong>Gender Split:</strong> <span class="blur-this-value">Mostly male (53%)</span></li><li><strong>Generation:</strong> <span class="blur-this-value">Tends to be older (Boomer, GenX)</span></li><li><strong>Location:</strong> <span class="blur-this-value">Strongly represented in US and Utah</span></li><li><strong>Marriage Rate:</strong> <span class="blur-this-value">64%</span></li><li><strong>Family Life:</strong> <span class="blur-this-value">32% have children (avg. 2.1)</span></li></ul></li>
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-church fa-fw mr-3 text-amber-600 text-lg"></i>LDS Church</strong><ul class="list-disc pl-10 space-y-1.5 text-slate-600 text-sm sm:text-base"><li><strong>Activity Rate:</strong> <span class="blur-this-value">89%</span></li><li><strong>Percent Converts:</strong> <span class="blur-this-value">22%</span></li><li><strong>Percent with Callings:</strong> <span class="blur-this-value">63%</span></li><li><strong>Most Common Callings:</strong> <span class="blur-this-value">Gospel teachers (13%), Leadership (8%)</span></li><li><strong>Most Desired Callings:</strong> <span class="blur-this-value">Teacher and Youth</span></li><li><strong>Favourite Apostles:</strong> <span class="blur-this-value">Dallin H. Oaks (18%) or David A. Bednar (8.7%)</span></li></ul></li>
-                                    <li class="space-y-2"><strong class="text-md sm:text-lg text-slate-800 flex items-center"><i class="fas fa-broadcast-tower fa-fw mr-3 text-rose-500 text-lg"></i>Top Sources For LDS Content</strong><ul class="list-none pl-10 space-y-3 text-slate-600 text-sm sm:text-base"><li><strong class="text-slate-700">Podcasts:</strong><ul class="list-circle pl-5 mt-1 space-y-1.5"><li><span class="blur-this-value">Scripture Center (17%)</span></li><li><span class="blur-this-value">Follow Him (6%)</span></li><li><span class="blur-this-value">Church History Matters (3%)</span></li></ul></li><li><strong class="text-slate-700">YouTube Channels:</strong><ul class="list-circle pl-5 mt-1 space-y-1.5"><li><span class="blur-this-value">Ward Radio (8%)</span></li><li><span class="blur-this-value">The Stick of Joseph (5%)</span></li><li><span class="blur-this-value">Thoughtful Faith (6%)</span></li><li><span class="blur-this-value">Come Back Podcast (6%)</span></li></ul></li><li><strong class="text-slate-700">Organizations:</strong><ul class="list-circle pl-5 mt-1 space-y-1.5"><li><span class="blur-this-value">FAIR LDS (9%)</span></li><li><span class="blur-this-value">Interpreter (2%)</span></li></ul></li></ul></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </details>
+        <div style="flex: 1; min-width: 280px; background-color: #f9f9fb; border: 1px solid #ddd; border-radius: 8px; padding: 15px; font-size: 0.95em;">
+        <h3 style="margin-top: 0px; color: #34495e; text-align: center;"><strong>About People in this Profile</strong></h3>
+        
+        <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0; line-height: 1.6;">
+            <li><strong>General Outlook</strong>
+        
+            <ul>
+                <li><strong>Political Leanings: </strong>Conservative (78% right-of center)</li>
+                <li><strong>Satisfied with Life:</strong> 81%</li>
+                <li><strong>Belief in God:</strong> 92%</li>
+                <li><strong>Religiosity</strong>: 97%</li>
+            </ul>
+            </li>
+            <li><strong>Demographics</strong>
+            <ul>
+                <li><strong>Gender Split:</strong> Mostly male (53%)</li>
+                <li><strong>Generation:</strong> Tends to be older (Boomer, GenX)</li>
+                <li><strong>Location:</strong> More strongly represented in US and Utah</li>
+                <li><strong>Marriage Rate:</strong> 64%</li>
+                <li><strong>Family Life:</strong> 32% have children, with an average of 2.1</li>
+            </ul>
+            </li>
+            <li><strong>LDS Church</strong>
+            <ul>
+                <li><strong>Activity Rate:</strong> 89%</li>
+                <li><strong>Percent Converts:</strong> 22%</li>
+                <li><strong>Percent with Callings:</strong> 63%</li>
+                <li><strong>Most Common Callings:</strong> Often gospel teachers and leadership</li>
+                <li><strong>Most Desired Callings:</strong> Teacher and Youth</li>
+                <li><strong>Favourite Apostles:</strong> Dallin H. Oaks (18%) or David A. Bednar (8.7%)
+                <ul>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li><strong>LDS Content Sources</strong>
+            <ul>
+                <li><strong>Podcasts</strong>
+                <ul>
+                    <li>Scripture Center (17%)</li>
+                    <li>Follow Him (6%)</li>
+                    <li>Church History Matters (3%)</li>
+                </ul>
+                </li>
+                <li><strong>YouTube</strong>
+                <ul>
+                    <li>Ward Radio (8%)</li>
+                    <li>The Stick of Joseph (5%)</li>
+                    <li>Thoughtful Faith (6%)</li>
+                    <li>Come Back Podcast (6%)</li>
+                </ul>
+                </li>
+                <li><strong>Organizations</strong>
+                <ul>
+                    <li>FAIR LDS (9%)</li>
+                    <li>Interpreter (2%)</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </details>  
+        
+    <details {{P1_BOX}} id="detailsProfile1" style="margin: 30px 0; background-color: #f4f6f8; padding: 15px 20px; border-radius: 6px; border: 1px solid #d0d7de;" ><summary style="font-weight: bold; color: #2c3e50; cursor: pointer; font-size: 1em; outline: none;"> The "Conventional" Believer </summary> <em>Conventional believers are the largest group, accounting for 31% of all respondents. These believers appear moderately conservative and institution-respecting. They score above average on Ecclesiastical Authority and Conventional Orthopraxy, valuing tradition and leadership, but less intensely than the Traditionalists. They show slightly above average rejection of Social Progressivism, Doctrinal Heterodoxy, and Self-Directed Religiosity. Their moderately low score on Pacifism indicates they tend to believe violence can at times be justified. This profile likely represents mainstream, active members adhering to conventional views.</em>
+    
+    <p>&nbsp;</p>
+    
+    <div style="display: flex; justify-content: space-between; gap: 20px; margin-bottom: 30px; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 300px; text-align: center;"><img style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;" src="https://drive.google.com/thumbnail?id=1bh4w3DNgCdtWKONSslGav63bjVMVcB4H&amp;sz=w500" alt="Radar Chart Representing Your Profile">
+    <p style="font-size: small; color: #6c757d; margin-top: 5px; font-style: italic;">This radar graph represents the typical belief pattern observed for your assigned profie across the six dimensions of LDS belief.</p>
     </div>
+    
+    <div style="flex: 1; min-width: 280px; background-color: #f9f9fb; border: 1px solid #ddd; border-radius: 8px; padding: 15px; font-size: 0.95em;">
+    <h3 style="margin-top: 0px; color: #34495e; text-align: center;"><strong>People in this Profile</strong></h3>
+    
+    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0; line-height: 1.6;">
+        <li><strong>Belief in God:</strong> Strong (4.4/5)</li>
+        <li><strong>Church Activity:</strong> Very Active (4.2/5)</li>
+        <li><strong>Gender:</strong> Mostly male (53%)</li>
+        <li><strong>Generation:</strong> Tends to be older (Boomer, GenX)</li>
+        <li><strong>Location:</strong> More often in US and Utah</li>
+        <li><strong>Callings:</strong> Often teachers and leadership</li>
+        <li><strong>Most Desired Callings:</strong> Teacher and Youth</li>
+        <li><strong>Dinner With:</strong> Dallin H. Oaks or David A. Bednar</li>
+        <li><strong>Family Life:</strong> Likely group to be married with children</li>
+    </ul>
+    </div>
+    </div>
+    </details>
+    
+    <details {{P5_BOX}} id="detailsProfile5" style="margin: 30px 0; background-color: #f4f6f8; padding: 15px 20px; border-radius: 6px; border: 1px solid #d0d7de;" ><summary style="font-weight: bold; color: #2c3e50; cursor: pointer; font-size: 1em; outline: none;"> The "Moderate" Believer </summary>
+    
+    <div style="margin-top: 15px; color: #333; line-height: 1.5;">
+    <p style="background-color: #fdfdfd; padding: 15px 20px; border-left: 5px solid #3498db; border-radius: 4px; margin-bottom: 30px;"><em>Moderate believers are the second largest profile, accounting for 30% of all believers. These individuals are near the overall average on nearly all belief dimensions. They show slightly below-average scores on Ecclesiastical Authority andConventional Orthopraxy, but very average scores on Social Progressivism,Doctrinal Heterodoxy, and Self-Directed Religiosity. Their moderate score onPacifism indicates a moderate tendency to reject justifications for violence compared to other classes. This profile represents members without strong ideological leanings, perhaps reflecting a very balanced, middle-way approach to their faith within this sample.</em></p>
+    
+    <div style="display: flex; justify-content: space-between; gap: 20px; margin-bottom: 30px; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 300px; text-align: center;"><img style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;" src="https://drive.google.com/thumbnail?id=1nzq8sWRg6TOCL9gag3RwraFc5e8y33Dc&amp;sz=w500" alt="Radar Chart Representing Your Profile">
+    <p style="font-size: small; color: #6c757d; margin-top: 5px; font-style: italic;">This radar graph represents the typical belief pattern observed for your assigned profie across the six dimensions of LDS belief.</p>
+    </div>
+    
+    <div style="flex: 1; min-width: 280px; background-color: #f9f9fb; border: 1px solid #ddd; border-radius: 8px; padding: 15px; font-size: 0.95em;">
+    <h3 style="margin-top: 0px; color: #34495e; text-align: center;"><strong>People in this Profile</strong></h3>
+    
+    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0; line-height: 1.6;">
+        <li><strong>Belief in God:</strong> Strong (4.4/5)</li>
+        <li><strong>Church Activity:</strong> Very Active (4.2/5)</li>
+        <li><strong>Gender:</strong> Mostly male (53%)</li>
+        <li><strong>Generation:</strong> Tends to be older (Boomer, GenX)</li>
+        <li><strong>Location:</strong> More often in US and Utah</li>
+        <li><strong>Callings:</strong> Often teachers and leadership</li>
+        <li><strong>Most Desired Callings:</strong> Teacher and Youth</li>
+        <li><strong>Dinner With:</strong> Dallin H. Oaks or David A. Bednar</li>
+        <li><strong>Family Life:</strong> Likely group to be married with children</li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </details>
+    
+    
+    <details {{P3_BOX}} id="detailsProfile3" style="margin: 30px 0; background-color: #f4f6f8; padding: 15px 20px; border-radius: 6px; border: 1px solid #d0d7de;" ><summary style="font-weight: bold; color: #2c3e50; cursor: pointer; font-size: 1em; outline: none;"> The "Moderate" Believer </summary>
+    
+        <div style="margin-top: 15px; color: #333; line-height: 1.5;">
+        <p style="background-color: #fdfdfd; padding: 15px 20px; border-left: 5px solid #3498db; border-radius: 4px; margin-bottom: 30px;"><em>Moderate believers are the second largest profile, accounting for 30% of all believers. These individuals are near the overall average on nearly all belief dimensions. They show slightly below-average scores on Ecclesiastical Authority andConventional Orthopraxy, but very average scores on Social Progressivism,Doctrinal Heterodoxy, and Self-Directed Religiosity. Their moderate score onPacifism indicates a moderate tendency to reject justifications for violence compared to other classes. This profile represents members without strong ideological leanings, perhaps reflecting a very balanced, middle-way approach to their faith within this sample.</em></p>
+        
+        <div style="display: flex; justify-content: space-between; gap: 20px; margin-bottom: 30px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px; text-align: center;"><img style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;" src="https://drive.google.com/thumbnail?id=1nzq8sWRg6TOCL9gag3RwraFc5e8y33Dc&amp;sz=w500" alt="Radar Chart Representing Your Profile">
+        <p style="font-size: small; color: #6c757d; margin-top: 5px; font-style: italic;">This radar graph represents the typical belief pattern observed for your assigned profie across the six dimensions of LDS belief.</p>
+        </div>
+        
+        <div style="flex: 1; min-width: 280px; background-color: #f9f9fb; border: 1px solid #ddd; border-radius: 8px; padding: 15px; font-size: 0.95em;">
+        <h3 style="margin-top: 0px; color: #34495e; text-align: center;"><strong>People in this Profile</strong></h3>
+        
+        <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0; line-height: 1.6;">
+            <li><strong>Belief in God:</strong> Strong (4.4/5)</li>
+            <li><strong>Church Activity:</strong> Very Active (4.2/5)</li>
+            <li><strong>Gender:</strong> Mostly male (53%)</li>
+            <li><strong>Generation:</strong> Tends to be older (Boomer, GenX)</li>
+            <li><strong>Location:</strong> More often in US and Utah</li>
+            <li><strong>Callings:</strong> Often teachers and leadership</li>
+            <li><strong>Most Desired Callings:</strong> Teacher and Youth</li>
+            <li><strong>Dinner With:</strong> Dallin H. Oaks or David A. Bednar</li>
+            <li><strong>Family Life:</strong> Likely group to be married with children</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </details>    
 
-</body>
-</html>
+</div>
